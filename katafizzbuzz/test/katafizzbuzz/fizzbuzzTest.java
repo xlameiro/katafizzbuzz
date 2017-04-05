@@ -30,15 +30,27 @@ public class fizzbuzzTest {
        }
     @Test
         public void testfizzbuzzdevuelvenumero3(){
-        fizzbuzz fb=new fizzbuzz();
-        String result=fb.dameEstado(3);
+        fizzbuzz fb=new fizzbuzz(3);
+        String result=fb.dameEstado();
          assertEquals("Fizz",result);
        }
     @Test
         public void testfizzbuzzdevuelvenumero4(){
-        fizzbuzz fb=new fizzbuzz();
-        String result=fb.dameEstado(6);
+        fizzbuzz fb=new fizzbuzz(6);
+        String result=fb.dameEstado();
          assertEquals("Fizz",result);
+       }
+    @Test
+        public void testfizzbuzzdevuelvenumero5(){
+        fizzbuzz fb=new fizzbuzz(5);
+        String result=fb.dameEstado();
+         assertEquals("Buzz",result);
+       }
+    @Test
+        public void testfizzbuzzdevuelvenumero6(){
+        fizzbuzz fb=new fizzbuzz(15);
+        String result=fb.dameEstado();
+         assertEquals("FizzBuzz",result);
        }
     
 }
